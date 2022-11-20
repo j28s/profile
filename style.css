@@ -1,9 +1,11 @@
+
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
     border-collapse: collapse;
-    margin: 0px;
-    padding: 0px;
     color: black;
 }
 
@@ -56,16 +58,22 @@ h1{
 
 .header{
     display: flex;
-    width:1280px;
-    margin:auto;
-    height: 86px;
+    width: 90%;
+    margin:0 auto;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 .header_about{
     display: flex;
-    width:1280px;
+    width:100%;
     margin:auto;
     background: rgba(160, 178, 196, 0.459);
-    height: 86px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .search_area{
@@ -73,7 +81,8 @@ h1{
     height: 40px;
     background: rgba(0,0,0,0.5);
     border-radius: 5px;
-    margin-top: 24px;
+    margin-top: 0px;
+    
 }
 
 .search_area > form > input {
@@ -87,7 +96,7 @@ h1{
 
 .search_area>form>span{
     width: 50px;
-    color:#fff
+    color:#fff;
     font-weight: bold;
     cursor: pointer;
 }
@@ -99,14 +108,6 @@ h1{
     width:calc(1280px - 300px);
 }
 
-.nav>li{
-    margin-left: 84px;
-    margin-right: 100px;
-}
-
-.nav>li>a{
-    color: #fff;
-}
 
 .nav2{
     display: flex;
@@ -233,6 +234,104 @@ h1{
     margin: auto;
     margin-top: 7px;
 }
+
+
+/*인트로 제외*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(image/0.jpg);
+}
+
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header h1 a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.container .nav ul li{
+    display: inline-block; 
+    margin: 0 10px;
+}
+
+.container .nav ul li a{
+    text-decoration: none; /*가로정렬*/
+    color: white;
+}
+
+.container .nav ul li a:hover{
+    color:  rgb(95, 40, 146);
+}
+/*마우스 커서 시 색상변경*/
+
+.container .hero{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container .hero h2{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.container .hero p{
+    font-size: 22px;
+    color: #fff;
+}
+
+.container .hero button{
+    background: none;
+    border: 2px solid rgb(95, 40, 146);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.container .hero button:hover{
+    background-color: rgba(79, 31, 124, 0.692);
+}
+
+/* 인트로 */
+
+.home ul li{
+    display: inline-block; 
+    margin: 0 10px;
+}
+
+.home ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.home ul li a:hover{
+    color:  rgb(95, 40, 146);
+}
+
+
+
+
+
+
+
+
 
 
 
